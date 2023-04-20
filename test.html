@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=PT+Serif:wght@400;700&family=Roboto:wght@300;400;900&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>test</title>
+  </head>
+  <body>
+    <header class="background_body">
+      <div class="conteiner">
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="30" height="20">
+            <use
+              class="icon-burger"
+              href="./images/sprite4.svg#icon-burger"
+            ></use>
+          </svg>
+        </button>
+        <div class="option_header">
+          <img src="./images/rain_bk3.png" alt="" class="img_option" />
+          <p class="text_header">Тест на определение IQ</p>
+        </div>
+      </div>
+    </header>
+    <!-- modal -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle-close js-close-menu">
+        <svg class="menu-mobile-close-icon" width="28" height="28">
+          <use href="./images/sprite4.svg#icon-jelow"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a href="#" class="title-menu__header del-decor">Главная</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="title-menu__header del-decor"
+            >Информация о тесте</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="title-menu__header del-decor">Пройти тест</a>
+        </li>
+      </ul>
+    </div>
+    <!-- ------------------------- -->
+    <main>
+      <!-- test-hero -->
+      <section class="background_test-hero">
+        <div class="conteiner">
+          <form class="form_option-test">
+            <div class="progress-test">
+              <label for="file"></label>
+              <progress id="file" max="100" value="0" class="progress-width">
+                0%
+              </progress>
+            </div>
+            <div id="step1" class="step">
+              <div class="name-form_test">
+                <label class="text_label">Ваш пол:</label>
+              </div>
+              <div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy1"
+                    name="vacancy"
+                    value="developer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy1" class="text_form">Мужчина</label>
+                </div>
+
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy2"
+                    name="vacancy"
+                    value="designer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy2" class="text_form">Женщина</label>
+                </div>
+              </div>
+            </div>
+            <div id="step2" class="step">
+              <div class="name-form_test">
+                <label class="text_label">Укажите ваш возраст:</label>
+              </div>
+              <div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy3"
+                    name="vacancy"
+                    value="developer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy3" class="text_form">До 18</label>
+                </div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy4"
+                    name="vacancy"
+                    value="designer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy4" class="text_form">От 18 до 28</label>
+                </div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy5"
+                    name="vacancy"
+                    value="designer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy5" class="text_form">От 29 до 35</label>
+                </div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy6"
+                    name="vacancy"
+                    value="designer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy6" class="text_form">От 36</label>
+                </div>
+              </div>
+            </div>
+            <div id="step3" class="step">
+              <div class="name-form_test">
+                <label class="text_label">Укажите ваш возраст:</label>
+              </div>
+              <div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy7"
+                    name="vacancy"
+                    value="developer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy7" class="text_form">Дом</label>
+                </div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy8"
+                    name="vacancy"
+                    value="designer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy8" class="text_form">Шалаш</label>
+                </div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy9"
+                    name="vacancy"
+                    value="designer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy9" class="text_form">Бунгало</label>
+                </div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy10"
+                    name="vacancy"
+                    value="designer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy10" class="text_form">Скамейка</label>
+                </div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy11"
+                    name="vacancy"
+                    value="designer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy11" class="text_form">Хижина</label>
+                </div>
+              </div>
+            </div>
+            <div id="step4" class="step">
+              <div class="name-form_test">
+                <label class="text_label"
+                  >Продолжите числовой ряд: 18 20 24 32
+                </label>
+              </div>
+              <div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy4.1"
+                    name="vacancy"
+                    value="developer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy4.1" class="text_form">62</label>
+                </div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy4.2"
+                    name="vacancy"
+                    value="designer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy4.2" class="text_form">48</label>
+                </div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy4.3"
+                    name="vacancy"
+                    value="designer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy4.3" class="text_form">74</label>
+                </div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy4.4"
+                    name="vacancy"
+                    value="designer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy4.4" class="text_form">57</label>
+                </div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy4.5"
+                    name="vacancy"
+                    value="designer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy4.5" class="text_form">60</label>
+                </div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy4.6"
+                    name="vacancy"
+                    value="designer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy4.6" class="text_form">77</label>
+                </div>
+              </div>
+            </div>
+            <div id="step5" class="step">
+              <div class="name-form_test">
+                <label class="text_label"
+                  >Выберите цвет, который сейчас наиболее Вам приятен:</label
+                >
+              </div>
+              <div>
+                <div class="form_radio1">
+                  <div
+                    class="color-box"
+                    id="color-box-1"
+                    style="background-color: #a8a8a8"
+                  ></div>
+                  <div
+                    class="color-box"
+                    id="color-box-2"
+                    style="background-color: #0000a9"
+                  ></div>
+                  <div
+                    class="color-box"
+                    id="color-box-3"
+                    style="background-color: #00a701"
+                  ></div>
+                  <div
+                    class="color-box"
+                    id="color-box-4"
+                    style="background-color: #f60100"
+                  ></div>
+                  <div
+                    class="color-box"
+                    id="color-box-5"
+                    style="background-color: #fdff19"
+                  ></div>
+                  <div
+                    class="color-box"
+                    id="color-box-6"
+                    style="background-color: #a95403"
+                  ></div>
+                  <div
+                    class="color-box"
+                    id="color-box-7"
+                    style="background-color: #000000"
+                  ></div>
+                  <div
+                    class="color-box"
+                    id="color-box-8"
+                    style="background-color: #850068"
+                  ></div>
+                  <div
+                    class="color-box"
+                    id="color-box-9"
+                    style="background-color: #46b2ac"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div id="step6" class="step">
+              <div class="name-form_test">
+                <label class="text_label"
+                  >Отдохните пару секунд, еще раз Выберите цвет, который сейчас
+                  наиболее Вам приятен:</label
+                >
+              </div>
+              <div>
+                <div class="form_radio1">
+                  <div
+                    class="color-box"
+                    id="color-box-1"
+                    style="background-color: #a8a8a8"
+                  ></div>
+                  <div
+                    class="color-box"
+                    id="color-box-2"
+                    style="background-color: #46b2ac"
+                  ></div>
+                  <div
+                    class="color-box"
+                    id="color-box-3"
+                    style="background-color: #a95403"
+                  ></div>
+                  <div
+                    class="color-box"
+                    id="color-box-4"
+                    style="background-color: #00a701"
+                  ></div>
+                  <div
+                    class="color-box"
+                    id="color-box-5"
+                    style="background-color: #000000"
+                  ></div>
+                  <div
+                    class="color-box"
+                    id="color-box-6"
+                    style="background-color: #f60100"
+                  ></div>
+                  <div
+                    class="color-box"
+                    id="color-box-7"
+                    style="background-color: #850068"
+                  ></div>
+                  <div
+                    class="color-box"
+                    id="color-box-8"
+                    style="background-color: #fdff19"
+                  ></div>
+                  <div
+                    class="color-box"
+                    id="color-box-9"
+                    style="background-color: #0000a9"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div id="step7" class="step">
+              <div class="name-form_test">
+                <label class="text_label">Какой из городов лишний? </label>
+              </div>
+              <div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy7.1"
+                    name="vacancy"
+                    value="developer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy7.1" class="text_form">Вашингтон</label>
+                </div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy7.2"
+                    name="vacancy"
+                    value="designer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy7.2" class="text_form">Лондон</label>
+                </div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy7.3"
+                    name="vacancy"
+                    value="designer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy7.3" class="text_form">Париж</label>
+                </div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy7.4"
+                    name="vacancy"
+                    value="designer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy7.4" class="text_form">Нью-Йорк</label>
+                </div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy7.5"
+                    name="vacancy"
+                    value="designer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy7.5" class="text_form">Москва</label>
+                </div>
+                <div class="form_radio">
+                  <input
+                    type="radio"
+                    id="vacancy7.6"
+                    name="vacancy"
+                    value="designer"
+                    class="input-radio"
+                  />
+                  <label for="vacancy7.6" class="text_form">Украина</label>
+                </div>
+              </div>
+            </div>
+            <div id="step8" class="step">
+              <div class="name-form_test">
+                <label class="text_label-step8"
+                  >Выберите правильную фигуру из четырёх пронумерованных.</label
+                >
+              </div>
+              <div>
+                <img src="./images/11.png" alt="image" class="img_step8" />
+                <div class="div_group-step8">
+                  <div class="radio_step8-div">
+                    <input
+                      type="radio"
+                      id="vacancy8.1"
+                      name="vacancy"
+                      value="developer"
+                      class="input-radio_step8"
+                    />
+                    <label for="vacancy8.1" class="radio_step8">1</label>
+                  </div>
+                  <div class="radio_step8-div">
+                    <input
+                      type="radio"
+                      id="vacancy8.1"
+                      name="vacancy"
+                      value="developer"
+                      class="input-radio_step8"
+                    />
+                    <label for="vacancy8.1" class="radio_step8">1</label>
+                  </div>
+                  <div class="radio_step8-div">
+                    <input
+                      type="radio"
+                      id="vacancy8.1"
+                      name="vacancy"
+                      value="developer"
+                      class="input-radio_step8"
+                    />
+                    <label for="vacancy8.1" class="radio_step8">1</label>
+                  </div>
+                  <div class="radio_step8-div">
+                    <input
+                      type="radio"
+                      id="vacancy8.1"
+                      name="vacancy"
+                      value="developer"
+                      class="input-radio_step8"
+                    />
+                    <label for="vacancy8.1" class="radio_step8">1</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="step9" class="step">
+              <div class="name-form_test">
+                <label class="text_label">Обработка результатов</label>
+              </div>
+              <div class="loader-wrapper">
+                <img src="./images/123.png" alt="Loading..." class="loader" />
+              </div>
+              <p class="inform_step9">
+                Определение стиля мышления........... ....
+                ...................................................
+              </p>
+            </div>
+            <div id="step10" class="step">
+              <div class="name-form_test">
+                <label class="text_label-step10"
+                  >Ваш результат рассчитан:</label
+                >
+                <label class="text_label-p-step10">
+                  вы относитесь к 3% респондентов, чей уровень интеллекта более
+                  чем на 15 пунктов отличается от среднего в большую или меньшую
+                  сторону!
+                </label></br>
+                <label class="text_label-resul-step10"
+                  >Скорее получите свой результат!
+                </label></br>
+                <label class="text_label-p-step10"
+                  >В целях защиты персональных данных результат теста, их
+                  подробная интерпретация и рекомендации доступны в виде
+                  голосового сообщения по звонку с вашего мобильного телефона
+                </label>
+                <label class="eee"
+                  >Звоните скорее, запись доступна всего
+                </label>
+                <a href="tel:+11-000-111-11-11"
+                  ><button type="button" class="btn-qq">
+                    позвонить и прослушать результат
+                  </button></a
+                >
+              </div>
+            </div>
+
+            <div class="btn-submit_test">
+              <button id="button" type="submit" class="btn_form disabled">
+                Далее
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="./radio.js"></script>
+    <script src="./modal.js"></script>
+  </body>
+</html>
